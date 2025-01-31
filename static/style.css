@@ -1,0 +1,220 @@
+/* Global styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+/* Container */
+h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+/* Style général */
+table {
+    width: 100%; /* Occupe toute la largeur */
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Bordures et espacement */
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Header du tableau */
+th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+/* Alternance des couleurs des lignes */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Effet au survol */
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Style du bouton CSV */
+#downloadCSV {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #27ae60;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Pleine largeur */
+}
+
+/* Effet hover */
+#downloadCSV:hover {
+    background-color: #2ecc71;
+}
+
+/* Form */
+form {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 100%; /* Pleine largeur */
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 10%; /* Pleine largeur */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Results */
+#result {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Pleine largeur */
+    box-sizing: border-box;
+}
+
+/* Titres */
+h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+h3 {
+    color: #3498db;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* List styles */
+ul {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+}
+
+/* Preformatted text for statistics */
+pre {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    overflow: auto;
+    text-align: left;
+    color: #555;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacement entre les images */
+}
+
+.image-container div {
+    flex: 1 1 calc(50% - 20px); /* 50% de la largeur avec un espacement */
+    max-width: 48%; /* Ajustement pour éviter un dépassement */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Pour les écrans plus petits */
+@media (max-width: 768px) {
+    .image-container div {
+        flex: 1 1 100%; /* Une seule image par ligne sur petits écrans */
+        max-width: 100%;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #result {
+        padding: 15px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+}

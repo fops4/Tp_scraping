@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey Stats</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Statistiques des Équipes de Hockey</h1>
+    <form id="searchForm">
+        <input type="text" id="teamName" placeholder="Nom de l’équipe" required>
+        <button type="submit">Rechercher</button>
+    </form>
+    
+    <div id="result">
+        <h2>Résultats :</h2>
+        <p>Les résultats seront affichés ici après la recherche.</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
